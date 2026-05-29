@@ -20,8 +20,8 @@ export default function Index() {
         <section id="technology">
           <TechnologySection />
         </section>
-        <ApplicationsTimeline />
         <AboutSection />
+        <ApplicationsTimeline />
         <section id="safety">
           <SafetySection />
         </section>

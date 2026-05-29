@@ -12,7 +12,7 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="font-orbitron text-xl font-bold text-white">
-              ART<span className="text-red-500">IST</span>
+              МИХ<span className="text-red-500">АИЛ</span>
             </h1>
           </div>
 
@@ -24,6 +24,9 @@ export function Navbar() {
                 className="font-geist text-white hover:text-red-500 transition-colors duration-200"
               >
                 Музыка
+              </a>
+              <a href="#about" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
+                Об авторе
               </a>
               <a href="#applications" className="font-geist text-white hover:text-red-500 transition-colors duration-200">
                 История
@@ -60,6 +63,13 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 Музыка
+              </a>
+              <a
+                href="#about"
+                className="block px-3 py-2 font-geist text-white hover:text-red-500 transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+              >
+                Об авторе
               </a>
               <a
                 href="#applications"
