@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Живые концерты",
+    description: "Незабываемые выступления с мощным звуком, световыми шоу и полным погружением в атмосферу музыки.",
+    icon: "mic",
+    badge: "Live",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Авторские треки",
+    description: "Каждая песня — история из жизни. Уникальный стиль на стыке жанров, который невозможно спутать с другими.",
+    icon: "music",
+    badge: "Оригинал",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
+    title: "Коллаборации",
+    description: "Совместные проекты с лучшими артистами и продюсерами. Всегда в поиске нового звучания и свежих идей.",
+    icon: "users",
+    badge: "Команда",
+  },
+  {
+    title: "Студийные записи",
+    description: "Высококачественные записи на профессиональном оборудовании. Каждый звук доведён до совершенства.",
+    icon: "headphones",
+    badge: "Студия",
+  },
+  {
+    title: "Мерч и релизы",
+    description: "Ограниченные коллекции одежды и эксклюзивные физические издания для настоящих фанатов.",
+    icon: "star",
+    badge: "Эксклюзив",
+  },
+  {
+    title: "Социальные сети",
+    description: "Ежедневный контент: закулисье, репетиции, новые треки. Будь первым, кто узнаёт о новинках.",
     icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
-  },
-  {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    badge: "Online",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Всё, что создаёт артист</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Музыка, концерты, коллаборации — погружайся в мир без границ
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "mic" && "🎤"}
+                    {feature.icon === "music" && "🎵"}
+                    {feature.icon === "users" && "🤝"}
+                    {feature.icon === "headphones" && "🎧"}
+                    {feature.icon === "star" && "⭐"}
+                    {feature.icon === "globe" && "🌐"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
